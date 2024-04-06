@@ -41,7 +41,7 @@ Install dependencies
 Create new database using PostgreSQL with the name **epresences**
 Copy the .env.example file and rename it to .env
 Configure the .env file to connect with the database, change these line
-```bash
+```code
 DB_CONNECTION=sqlite
 # DB_HOST=127.0.0.1
 # DB_PORT=3306
@@ -50,7 +50,7 @@ DB_CONNECTION=sqlite
 # DB_PASSWORD=
 ```
 with
-```bash
+```code
 DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
 DB_PORT=5432
@@ -83,7 +83,7 @@ To get the api key you can use the login endpoint.
 There is two default account, `spv@email.com` and `bayu@email.com`. The default password for all account is `password`.
 
 You can click the `Try it out` button at **Authorization > Login** endpoint, and change the email and password. If the authorization success, you will get the token from the API response like this.
-```bash
+```code
 {
   "message": "Success",
   "data": {
@@ -102,7 +102,7 @@ You can click the `Try it out` button at **Authorization > Login** endpoint, and
 Copy your token, then click the `Authorize` button at the top-right of the page.
 
 Paste your token in the value field and add the word `Bearer` front of the token, so the token will look like this.
-```code
+```bash
 Bearer <Your Token>
 ```
 Then hit the authorize button, and you can use all of the endpoint.
